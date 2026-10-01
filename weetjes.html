@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dieren.css">   
+
+    <title>Dierenweetjes</title>
+</head>
+
+<body>
+
+    <nav>
+        <h2>Dierenencyclopedie</h2>
+
+        <div class="links">
+            <a href="info.html">Informatie</a>
+            <a href="weetjes.html" class="actief">Weetjes</a>
+        </div>
+    </nav>
+
+    <main>
+
+        <section class="intro">
+            <p class="klein">Klik op de knoppen</p>
+
+            <h1>Dierenweetjes</h1>
+
+            <p>
+                Op deze pagina staan verborgen weetjes over beren en katten.
+                Klik op een knop om een weetje te bekijken.
+            </p>
+        </section>
+
+        <section class="weetjes-container">
+
+            <article class="weetje-kaart">
+                <h2>Weetje over beren</h2>
+
+                <p>
+                    Klik op de knop om het eerste berenweetje te bekijken.
+                </p>
+
+                <button onclick="toonBerenWeetje()">
+                    Toon berenweetje
+                </button>
+
+                <p id="beren-weetje" class="verborgen-weetje">
+                    IJsberen hebben een dikke vacht en een vetlaag die helpen
+                    om warm te blijven in een zeer koude omgeving.
+                </p>
+            </article>
+
+            <article class="weetje-kaart">
+                <h2>Nog een berenweetje</h2>
+
+                <p>
+                    Er bestaan verschillende soorten beren met verschillende
+                    leefgebieden en eetgewoonten.
+                </p>
+
+                <button onclick="toonPandaWeetje()">
+                    Toon tweede weetje
+                </button>
+
+                <p id="panda-weetje" class="verborgen-weetje">
+                    De reuzenpanda behoort tot de berenfamilie en eet
+                    voornamelijk bamboe.
+                </p>
+            </article>
+
+            <article class="weetje-kaart">
+                <h2>Weetje over katten</h2>
+
+                <p>
+                    Klik op de knop om het kattenweetje zichtbaar te maken.
+                </p>
+
+                <button onclick="toonKattenWeetje()">
+                    Toon kattenweetje
+                </button>
+
+                <p id="katten-weetje" class="verborgen-weetje">
+                    De snorharen van een kat helpen bij het waarnemen van
+                    kleine veranderingen en obstakels in de omgeving.
+                </p>
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Dierenencyclopedie</p>
+    </footer>
+
+    <script>
+        function toonBerenWeetje() {
+            document.getElementById("beren-weetje").style.display = "block";
+            document.getElementById("beren-weetje").style.color = "#2563eb";
+            document.getElementById("beren-weetje").style.fontSize = "18px";
+        }
+
+        function toonPandaWeetje() {
+            document.getElementById("panda-weetje").style.display = "block";
+            document.getElementById("panda-weetje").style.color = "#2563eb";
+            document.getElementById("panda-weetje").style.fontSize = "18px";
+        }
+
+        function toonKattenWeetje() {
+            document.getElementById("katten-weetje").style.display = "block";
+            document.getElementById("katten-weetje").style.color = "#2563eb";
+            document.getElementById("katten-weetje").style.fontSize = "18px";
+        }
+    </script>
+
+</body>
+
+</html>
